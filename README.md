@@ -6,9 +6,8 @@ Host a static website on a remote Linux server using **Nginx** and deploy update
 ---
 
 ## 🚀 What this project demonstrates
-- Provisioning an Ubuntu server (EC2)
 - Installing and configuring **Nginx** (server block, sites-available → sites-enabled)
-- Allowing HTTP traffic (UFW + EC2 Security Group)
+- Allowing HTTP traffic (UFW )
 - Deploying static files using **rsync**
 - (Optional) Simple deploy script with environment variables
 
@@ -46,8 +45,7 @@ You should see the Nginx welcome HTML.
 ```bash
 sudo mkdir -p /var/www/mysite/html
 sudo chown -R $USER:www-data /var/www/mysite
-echo "<h1>Hello from Mosab!</h1>" > /var/www/mysite/html/index.html
-echo "<h1>Hello from Static Site Server</h1>" | sudo tee /var/www/mysite/html/index.html
+echo "<h1>Hello from Static Site Server</h1>" > /var/www/mysite/html/index.html
 ```
 
 ### 3.Nginx Server Block (sites-available → sites-enabled)
