@@ -81,7 +81,7 @@ sudo ufw allow 80/tcp
 sudo ufw enable
 sudo ufw status
 ```
-Now http://<SERVER_IP> should load your sample page.
+Now `http://<SERVER_IP>` should load your sample page.
 
 ### 5.Deploy Static Files with rsync (from your local machine)
 Basic one-liner:
